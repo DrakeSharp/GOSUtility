@@ -27,12 +27,11 @@
 	<math.h>
 	<unistd.h>
 
-1438441814 source:c:\users\krystian\desktop\gos-scripts\gosutility\gosutility.c
+1438454605 source:c:\users\krystian\desktop\gos-scripts\gosutility\gosutility.c
 	<windows.h>
 	<stdbool.h>
 	<stdlib.h>
 	<dirent.h>
-	<curl/curl.h>
 	<lauxlib.h>
 	<lua.h>
 

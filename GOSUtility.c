@@ -111,7 +111,7 @@ static int request(lua_State *L){
     }
 
     strcat(cmd, luaL_checkstring(L, 2));
-    char buf[20000];
+    char buf[200000];
     char buf2[300];
     FILE *fp;
 
@@ -130,8 +130,8 @@ static int request(lua_State *L){
         return 1;
     }
     lua_pushstring(L, buf);
-    memset(buf, 0, 20000);
-    memset(buf2, 0, 20000);
+    memset(buf, 0, 200000);
+    memset(buf2, 0, 300);
     return 1;
 }
 

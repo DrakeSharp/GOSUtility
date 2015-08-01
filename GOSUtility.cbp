@@ -16,7 +16,6 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add option="-Wall" />
-					<Add option='-lcurl -L&quot;C:\Users\Krystian\Desktop\GoS-Scripts\GOSUtility\curl-7.40.0-devel-mingw32\lib&quot;' />
 					<Add option="-DBUILD_DLL" />
 				</Compiler>
 				<Linker>
