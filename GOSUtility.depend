@@ -1,0 +1,72 @@
+# depslib dependency file v1.0
+1438428982 source:c:\users\krystian\desktop\gos-scripts\gosutility\main.c
+	<windows.h>
+	"lauxlib.h"
+	"lua.h"
+
+1429903532 c:\users\krystian\desktop\gos-scripts\gosutility\lauxlib.h
+	<stddef.h>
+	<stdio.h>
+	"lua.h"
+
+1429903532 c:\users\krystian\desktop\gos-scripts\gosutility\lua.h
+	<stdarg.h>
+	<stddef.h>
+	"luaconf.h"
+
+1429903532 c:\users\krystian\desktop\gos-scripts\gosutility\luaconf.h
+	<limits.h>
+	<stddef.h>
+	<unistd.h>
+	<io.h>
+	<stdio.h>
+	<stdio.h>
+	<readline/readline.h>
+	<readline/history.h>
+	<assert.h>
+	<math.h>
+	<unistd.h>
+
+1438441814 source:c:\users\krystian\desktop\gos-scripts\gosutility\gosutility.c
+	<windows.h>
+	<stdbool.h>
+	<stdlib.h>
+	<dirent.h>
+	<curl/curl.h>
+	<lauxlib.h>
+	<lua.h>
+
+1419777365 c:\users\krystian\desktop\gos-scripts\gosutility\curl\curl.h
+	"curlver.h"
+	"curlbuild.h"
+	"curlrules.h"
+	<stdio.h>
+	<limits.h>
+	<osreldate.h>
+	<sys/types.h>
+	<time.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/select.h>
+	<sys/socket.h>
+	<sys/time.h>
+	<support/SupportDefs.h>
+	"easy.h"
+	"multi.h"
+	"typecheck-gcc.h"
+
+1420708698 c:\users\krystian\desktop\gos-scripts\gosutility\curl\curlver.h
+
+1420708698 c:\users\krystian\desktop\gos-scripts\gosutility\curl\curlbuild.h
+	<sys/types.h>
+	<sys/socket.h>
+
+1415109076 c:\users\krystian\desktop\gos-scripts\gosutility\curl\curlrules.h
+
+1402512749 c:\users\krystian\desktop\gos-scripts\gosutility\curl\easy.h
+
+1415109076 c:\users\krystian\desktop\gos-scripts\gosutility\curl\multi.h
+	"curl.h"
+
+1415109076 c:\users\krystian\desktop\gos-scripts\gosutility\curl\typecheck-gcc.h
+

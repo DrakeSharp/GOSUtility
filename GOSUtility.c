@@ -1,0 +1,175 @@
+#define _WIN32_WINNT 0x0500
+#include <windows.h>
+#include <stdbool.h>
+#include <stdlib.h>
+#include <dirent.h>
+#include <lauxlib.h>
+#include <lua.h>
+
+const int VERSION = 1;
+bool consoleOpen = false;
+char scriptsHome[500];
+
+
+static int openConsole(){
+    FreeConsole();
+    AllocConsole();
+    freopen("CONOUT$", "w", stdout);
+    consoleOpen = true;
+    return 1;
+}
+
+void pr(char* fmt, ...)
+{
+    if(!consoleOpen) openConsole();
+    va_list args;
+    va_start(args,fmt);
+    vprintf(fmt,args);
+    va_end(args);
+}
+
+
+static int version(lua_State *L){
+    lua_pushnumber (L, VERSION);
+    return 1;
+}
+
+static int listScripts(lua_State *L){
+    DIR *dir;
+    struct dirent *ent;
+    lua_newtable(L);
+    if ((dir = opendir (scriptsHome)) != NULL) {
+      int i=1;
+      while ((ent = readdir (dir)) != NULL) {
+            if(!strcmp("testscript1.lua", ent->d_name)) continue;
+            if(!strcmp("testscript2.lua", ent->d_name)) continue;
+            if(!strcmp("testscript3.lua", ent->d_name)) continue;
+            if(!(strlen(ent->d_name) > 4 && !strcmp(ent->d_name + strlen(ent->d_name) - 4, ".lua"))) continue;
+            ent->d_name[strlen(ent->d_name)-4] = 0;
+            lua_pushstring(L, ent->d_name);
+            lua_rawseti(L, -2, i);
+            i++;
+      }
+      closedir (dir);
+    } else {
+      /* could not open directory */
+      perror ("");
+      return EXIT_FAILURE;
+    }
+
+
+
+    return 1;
+}
+
+static int print(lua_State *L){
+    pr(luaL_checkstring(L, 1));
+    pr("\n");
+    return 0;
+}
+
+static int printn(lua_State *L){
+    pr(luaL_checkstring(L, 1));
+    return 0;
+}
+
+static int closeConsole(lua_State *L){
+    HWND h=GetConsoleWindow();
+    FreeConsole();
+    SendMessage(h, WM_SYSCOMMAND, SC_CLOSE, 0);
+    consoleOpen = false;
+    return 0;
+}
+
+static int saveScript(lua_State *L){
+    char filepath[600];
+    strcpy(filepath, scriptsHome);
+    strcat(filepath, luaL_checkstring(L, 1));
+    strcat(filepath, ".lua");
+    FILE *fp = fopen(filepath, "w+");
+    if (fp != NULL){
+        fputs(luaL_checkstring(L, 2), fp);
+        fclose(fp);
+        lua_pushboolean(L, true);
+    }else{
+        lua_pushboolean(L, false);
+    }
+    return 1;
+}
+
+static int request(lua_State *L){
+    char cmd[1000];
+    strcpy(cmd, scriptsHome);
+    strcat(cmd, "Common\\curl.exe -ks ");
+    if(!strcmp("github", luaL_checkstring(L, 1))) strcat(cmd, "https://raw.githubusercontent.com/");
+    else if (!strcmp("opgg", luaL_checkstring(L, 1))) strcat(cmd, "http://op.gg/");
+    else if (!strcmp("lolking", luaL_checkstring(L, 1))) strcat(cmd, "http://lolking.net/");
+    else{
+        pr("GOSUtility: forbidden server %s\n", luaL_checkstring(L, 1));
+        lua_pushnil(L);
+        return 1;
+    }
+
+    strcat(cmd, luaL_checkstring(L, 2));
+    char buf[20000];
+    char buf2[300];
+    FILE *fp;
+
+    if ((fp = popen(cmd, "r")) == NULL) {
+        lua_pushnil(L);
+        return 1;
+    }
+
+    while (fgets(buf2, 300, fp) != NULL) {
+            strcat(buf, buf2);
+    }
+
+    if(pclose(fp))  {
+        pr("Curl not found or exited with error status\n");
+        lua_pushnil(L);
+        return 1;
+    }
+    lua_pushstring(L, buf);
+    memset(buf, 0, 20000);
+    memset(buf2, 0, 20000);
+    return 1;
+}
+
+static int mousePos(lua_State *L){
+    POINT p;
+    GetCursorPos(&p);
+    lua_newtable(L);
+    lua_pushnumber(L, p.x);
+    lua_rawseti(L, -2, 1);
+    lua_pushnumber(L, p.y);
+    lua_rawseti(L, -2, 2);
+    return 1;
+}
+
+static int resolution(lua_State *L){
+    lua_newtable(L);
+    lua_pushnumber(L, GetSystemMetrics(SM_CXSCREEN));
+    lua_rawseti(L, -2, 1);
+    lua_pushnumber(L, GetSystemMetrics(SM_CYSCREEN));
+    lua_rawseti(L, -2, 2);
+    return 1;
+}
+
+
+static const luaL_Reg GOSU[] = {{"version", version},
+                                {"listScripts", listScripts},
+                                {"print", print},
+                                {"printn", printn},
+                                {"closeConsole", closeConsole},
+                                {"saveScript", saveScript},
+                                {"request", request},
+                                {"mousePos", mousePos},
+                                {"resolution", resolution},
+                                         {NULL, NULL}};
+int luaopen_GOSUtility (lua_State *L)
+{
+        strcpy(scriptsHome, getenv("APPDATA"));
+        strcat(scriptsHome, "\\GamingOnSteroids\\LOL\\Scripts\\");
+        luaL_register(L, "GOSU", GOSU);
+        return 1;
+}

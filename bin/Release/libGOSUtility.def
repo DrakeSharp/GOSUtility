@@ -1,0 +1,6 @@
+EXPORTS
+    VERSION @1 DATA
+    consoleOpen @2 DATA
+    luaopen_GOSUtility @3
+    pr @4
+    scriptsHome @5 DATA
