@@ -14,17 +14,138 @@
 				<Option createDefFile="1" />
 				<Option createStaticLib="1" />
 				<Compiler>
-					<Add option="-O2" />
+					<Add option="-O1" />
 					<Add option="-Wall" />
 					<Add option="-DBUILD_DLL" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add option="-static" />
+					<Add option="-static-libgcc" />
+					<Add option="-static-libstdc++" />
 					<Add library="user32" />
-					<Add library="..\..\..\..\..\Program Files (x86)\LuaRocks\2.2\lua51.lib" />
 				</Linker>
 			</Target>
 		</Build>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lapi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lapi.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lauxlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lauxlib.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lbaselib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lcode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lcode.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/ldblib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/ldebug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/ldebug.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/ldo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/ldo.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/ldump.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lfunc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lfunc.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lgc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lgc.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/linit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/liolib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/llex.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/llex.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/llimits.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lmathlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lmem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lmem.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/loadlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lobject.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lobject.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lopcodes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lopcodes.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/loslib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lparser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lparser.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lstate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lstate.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lstring.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lstring.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lstrlib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/ltable.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/ltable.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/ltablib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/ltm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/ltm.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lua.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lua.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/luac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/luaconf.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lualib.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lundump.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lundump.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lvm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lvm.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lzio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/lzio.h" />
+		<Unit filename="../../../Downloads/lua-all/lua-5.1/print.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="GOSUtility.c">
 			<Option compilerVar="CC" />
 		</Unit>

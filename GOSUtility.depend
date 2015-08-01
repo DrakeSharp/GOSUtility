@@ -4,17 +4,17 @@
 	"lauxlib.h"
 	"lua.h"
 
-1429903532 c:\users\krystian\desktop\gos-scripts\gosutility\lauxlib.h
+1135873931 c:\users\krystian\desktop\gos-scripts\gosutility\lauxlib.h
 	<stddef.h>
 	<stdio.h>
 	"lua.h"
 
-1429903532 c:\users\krystian\desktop\gos-scripts\gosutility\lua.h
+1136901013 c:\users\krystian\desktop\gos-scripts\gosutility\lua.h
 	<stdarg.h>
 	<stddef.h>
 	"luaconf.h"
 
-1429903532 c:\users\krystian\desktop\gos-scripts\gosutility\luaconf.h
+1139597046 c:\users\krystian\desktop\gos-scripts\gosutility\luaconf.h
 	<limits.h>
 	<stddef.h>
 	<unistd.h>
@@ -27,7 +27,7 @@
 	<math.h>
 	<unistd.h>
 
-1438454605 source:c:\users\krystian\desktop\gos-scripts\gosutility\gosutility.c
+1438475193 source:c:\users\krystian\desktop\gos-scripts\gosutility\gosutility.c
 	<windows.h>
 	<stdbool.h>
 	<stdlib.h>
@@ -68,4 +68,894 @@
 	"curl.h"
 
 1415109076 c:\users\krystian\desktop\gos-scripts\gosutility\curl\typecheck-gcc.h
+
+1136901000 source:c:\users\krystian\downloads\lua-all\lua-5.1\lapi.c
+	<assert.h>
+	<math.h>
+	<stdarg.h>
+	<string.h>
+	"lua.h"
+	"lapi.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+	"lundump.h"
+	"lvm.h"
+
+1136901013 c:\users\krystian\downloads\lua-all\lua-5.1\lua.h
+	<stdarg.h>
+	<stddef.h>
+	"luaconf.h"
+
+1139597046 c:\users\krystian\downloads\lua-all\lua-5.1\luaconf.h
+	<limits.h>
+	<stddef.h>
+	<unistd.h>
+	<io.h>
+	<stdio.h>
+	<stdio.h>
+	<readline/readline.h>
+	<readline/history.h>
+	<assert.h>
+	<math.h>
+	<unistd.h>
+
+1114460650 c:\users\krystian\downloads\lua-all\lua-5.1\lapi.h
+	"lobject.h"
+
+1137587854 c:\users\krystian\downloads\lua-all\lua-5.1\lobject.h
+	<stdarg.h>
+	"llimits.h"
+	"lua.h"
+
+1135707120 c:\users\krystian\downloads\lua-all\lua-5.1\llimits.h
+	<limits.h>
+	<stddef.h>
+	"lua.h"
+
+1114460650 c:\users\krystian\downloads\lua-all\lua-5.1\ldebug.h
+	"lstate.h"
+
+1139254079 c:\users\krystian\downloads\lua-all\lua-5.1\lstate.h
+	"lua.h"
+	"lobject.h"
+	"ltm.h"
+	"lzio.h"
+
+1118068225 c:\users\krystian\downloads\lua-all\lua-5.1\ltm.h
+	"lobject.h"
+
+1116362955 c:\users\krystian\downloads\lua-all\lua-5.1\lzio.h
+	"lua.h"
+	"lmem.h"
+
+1114460650 c:\users\krystian\downloads\lua-all\lua-5.1\lmem.h
+	<stddef.h>
+	"llimits.h"
+	"lua.h"
+
+1124903749 c:\users\krystian\downloads\lua-all\lua-5.1\ldo.h
+	"lobject.h"
+	"lstate.h"
+	"lzio.h"
+
+1114460650 c:\users\krystian\downloads\lua-all\lua-5.1\lfunc.h
+	"lobject.h"
+
+1124903749 c:\users\krystian\downloads\lua-all\lua-5.1\lgc.h
+	"lobject.h"
+
+1114460650 c:\users\krystian\downloads\lua-all\lua-5.1\lstring.h
+	"lgc.h"
+	"lobject.h"
+	"lstate.h"
+
+1136902386 c:\users\krystian\downloads\lua-all\lua-5.1\ltable.h
+	"lobject.h"
+
+1131721393 c:\users\krystian\downloads\lua-all\lua-5.1\lundump.h
+	"lobject.h"
+	"lzio.h"
+
+1124740489 c:\users\krystian\downloads\lua-all\lua-5.1\lvm.h
+	"ldo.h"
+	"lobject.h"
+	"ltm.h"
+
+1137418941 source:c:\users\krystian\downloads\lua-all\lua-5.1\lauxlib.c
+	<ctype.h>
+	<errno.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+
+1135873931 c:\users\krystian\downloads\lua-all\lua-5.1\lauxlib.h
+	<stddef.h>
+	<stdio.h>
+	"lua.h"
+
+1137588552 source:c:\users\krystian\downloads\lua-all\lua-5.1\lbaselib.c
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1135707120 c:\users\krystian\downloads\lua-all\lua-5.1\lualib.h
+	"lua.h"
+
+1135271996 source:c:\users\krystian\downloads\lua-all\lua-5.1\lcode.c
+	<stdlib.h>
+	"lua.h"
+	"lcode.h"
+	"ldebug.h"
+	"ldo.h"
+	"lgc.h"
+	"llex.h"
+	"lmem.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lparser.h"
+	"ltable.h"
+
+1131482671 c:\users\krystian\downloads\lua-all\lua-5.1\lcode.h
+	"llex.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lparser.h"
+
+1133973785 c:\users\krystian\downloads\lua-all\lua-5.1\llex.h
+	"lobject.h"
+	"lzio.h"
+
+1133552528 c:\users\krystian\downloads\lua-all\lua-5.1\lopcodes.h
+	"llimits.h"
+
+1128351760 c:\users\krystian\downloads\lua-all\lua-5.1\lparser.h
+	"llimits.h"
+	"lobject.h"
+	"ltable.h"
+	"lzio.h"
+
+1135873931 source:c:\users\krystian\downloads\lua-all\lua-5.1\ldblib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1135271996 source:c:\users\krystian\downloads\lua-all\lua-5.1\ldebug.c
+	<stdarg.h>
+	<stddef.h>
+	<string.h>
+	"lua.h"
+	"lapi.h"
+	"lcode.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+	"lvm.h"
+
+1135271996 source:c:\users\krystian\downloads\lua-all\lua-5.1\ldo.c
+	<setjmp.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lparser.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+	"lundump.h"
+	"lvm.h"
+	"lzio.h"
+
+1140108829 source:c:\users\krystian\downloads\lua-all\lua-5.1\ldump.c
+	<stddef.h>
+	"lua.h"
+	"lobject.h"
+	"lstate.h"
+	"lundump.h"
+
+1135271996 source:c:\users\krystian\downloads\lua-all\lua-5.1\lfunc.c
+	<stddef.h>
+	"lua.h"
+	"lfunc.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+
+1135271996 source:c:\users\krystian\downloads\lua-all\lua-5.1\lgc.c
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+
+1135873931 source:c:\users\krystian\downloads\lua-all\lua-5.1\linit.c
+	"lua.h"
+	"lualib.h"
+	"lauxlib.h"
+
+1138456753 source:c:\users\krystian\downloads\lua-all\lua-5.1\liolib.c
+	<errno.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1139254096 source:c:\users\krystian\downloads\lua-all\lua-5.1\llex.c
+	<ctype.h>
+	<locale.h>
+	<string.h>
+	"lua.h"
+	"ldo.h"
+	"llex.h"
+	"lobject.h"
+	"lparser.h"
+	"lstate.h"
+	"lstring.h"
+	"lzio.h"
+
+1125081392 source:c:\users\krystian\downloads\lua-all\lua-5.1\lmathlib.c
+	<stdlib.h>
+	<math.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1135607747 source:c:\users\krystian\downloads\lua-all\lua-5.1\lmem.c
+	<stddef.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+
+1135873931 source:c:\users\krystian\downloads\lua-all\lua-5.1\loadlib.c
+	<stdlib.h>
+	<string.h>
+	"lauxlib.h"
+	"lobject.h"
+	"lua.h"
+	"lualib.h"
+	<dlfcn.h>
+	<windows.h>
+	<mach-o/dyld.h>
+
+1139597032 source:c:\users\krystian\downloads\lua-all\lua-5.1\lobject.c
+	<ctype.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"ldo.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+	"lvm.h"
+
+1131482736 source:c:\users\krystian\downloads\lua-all\lua-5.1\lopcodes.c
+	"lopcodes.h"
+
+1138373671 source:c:\users\krystian\downloads\lua-all\lua-5.1\loslib.c
+	<errno.h>
+	<locale.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1135271996 source:c:\users\krystian\downloads\lua-all\lua-5.1\lparser.c
+	<string.h>
+	"lua.h"
+	"lcode.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"llex.h"
+	"lmem.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lparser.h"
+	"lstate.h"
+	"lstring.h"
+
+1128635185 source:c:\users\krystian\downloads\lua-all\lua-5.1\lstate.c
+	<stddef.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"llex.h"
+	"lmem.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+
+1135271996 source:c:\users\krystian\downloads\lua-all\lua-5.1\lstring.c
+	<string.h>
+	"lua.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+
+1135873931 source:c:\users\krystian\downloads\lua-all\lua-5.1\lstrlib.c
+	<ctype.h>
+	<stddef.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1137588542 source:c:\users\krystian\downloads\lua-all\lua-5.1\ltable.c
+	<math.h>
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"ltable.h"
+
+1130092695 source:c:\users\krystian\downloads\lua-all\lua-5.1\ltablib.c
+	<stddef.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1136901000 source:c:\users\krystian\downloads\lua-all\lua-5.1\ltm.c
+	<string.h>
+	"lua.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+
+1131721393 source:c:\users\krystian\downloads\lua-all\lua-5.1\luac.c
+	<errno.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"ldo.h"
+	"lfunc.h"
+	"lmem.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lstring.h"
+	"lundump.h"
+
+1140108829 source:c:\users\krystian\downloads\lua-all\lua-5.1\lundump.c
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstring.h"
+	"lundump.h"
+	"lzio.h"
+
+1138049503 source:c:\users\krystian\downloads\lua-all\lua-5.1\lvm.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+	"lvm.h"
+
+1117833329 source:c:\users\krystian\downloads\lua-all\lua-5.1\lzio.c
+	<string.h>
+	"lua.h"
+	"llimits.h"
+	"lmem.h"
+	"lstate.h"
+	"lzio.h"
+
+1137023367 source:c:\users\krystian\downloads\lua-all\lua-5.1\print.c
+	<ctype.h>
+	<stdio.h>
+	"ldebug.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lundump.h"
+
+1136901000 source:c:\users\krystian\desktop\gos-scripts\gosutility\lapi.c
+	<assert.h>
+	<math.h>
+	<stdarg.h>
+	<string.h>
+	"lua.h"
+	"lapi.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+	"lundump.h"
+	"lvm.h"
+
+1114460650 c:\users\krystian\desktop\gos-scripts\gosutility\lapi.h
+	"lobject.h"
+
+1137587854 c:\users\krystian\desktop\gos-scripts\gosutility\lobject.h
+	<stdarg.h>
+	"llimits.h"
+	"lua.h"
+
+1135707120 c:\users\krystian\desktop\gos-scripts\gosutility\llimits.h
+	<limits.h>
+	<stddef.h>
+	"lua.h"
+
+1114460650 c:\users\krystian\desktop\gos-scripts\gosutility\ldebug.h
+	"lstate.h"
+
+1139254079 c:\users\krystian\desktop\gos-scripts\gosutility\lstate.h
+	"lua.h"
+	"lobject.h"
+	"ltm.h"
+	"lzio.h"
+
+1118068225 c:\users\krystian\desktop\gos-scripts\gosutility\ltm.h
+	"lobject.h"
+
+1116362955 c:\users\krystian\desktop\gos-scripts\gosutility\lzio.h
+	"lua.h"
+	"lmem.h"
+
+1114460650 c:\users\krystian\desktop\gos-scripts\gosutility\lmem.h
+	<stddef.h>
+	"llimits.h"
+	"lua.h"
+
+1124903749 c:\users\krystian\desktop\gos-scripts\gosutility\ldo.h
+	"lobject.h"
+	"lstate.h"
+	"lzio.h"
+
+1114460650 c:\users\krystian\desktop\gos-scripts\gosutility\lfunc.h
+	"lobject.h"
+
+1124903749 c:\users\krystian\desktop\gos-scripts\gosutility\lgc.h
+	"lobject.h"
+
+1114460650 c:\users\krystian\desktop\gos-scripts\gosutility\lstring.h
+	"lgc.h"
+	"lobject.h"
+	"lstate.h"
+
+1136902386 c:\users\krystian\desktop\gos-scripts\gosutility\ltable.h
+	"lobject.h"
+
+1131721393 c:\users\krystian\desktop\gos-scripts\gosutility\lundump.h
+	"lobject.h"
+	"lzio.h"
+
+1124740489 c:\users\krystian\desktop\gos-scripts\gosutility\lvm.h
+	"ldo.h"
+	"lobject.h"
+	"ltm.h"
+
+1137418941 source:c:\users\krystian\desktop\gos-scripts\gosutility\lauxlib.c
+	<ctype.h>
+	<errno.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+
+1137588552 source:c:\users\krystian\desktop\gos-scripts\gosutility\lbaselib.c
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1135707120 c:\users\krystian\desktop\gos-scripts\gosutility\lualib.h
+	"lua.h"
+
+1135271996 source:c:\users\krystian\desktop\gos-scripts\gosutility\lcode.c
+	<stdlib.h>
+	"lua.h"
+	"lcode.h"
+	"ldebug.h"
+	"ldo.h"
+	"lgc.h"
+	"llex.h"
+	"lmem.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lparser.h"
+	"ltable.h"
+
+1131482671 c:\users\krystian\desktop\gos-scripts\gosutility\lcode.h
+	"llex.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lparser.h"
+
+1133973785 c:\users\krystian\desktop\gos-scripts\gosutility\llex.h
+	"lobject.h"
+	"lzio.h"
+
+1133552528 c:\users\krystian\desktop\gos-scripts\gosutility\lopcodes.h
+	"llimits.h"
+
+1128351760 c:\users\krystian\desktop\gos-scripts\gosutility\lparser.h
+	"llimits.h"
+	"lobject.h"
+	"ltable.h"
+	"lzio.h"
+
+1135873931 source:c:\users\krystian\desktop\gos-scripts\gosutility\ldblib.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1135271996 source:c:\users\krystian\desktop\gos-scripts\gosutility\ldebug.c
+	<stdarg.h>
+	<stddef.h>
+	<string.h>
+	"lua.h"
+	"lapi.h"
+	"lcode.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+	"lvm.h"
+
+1135271996 source:c:\users\krystian\desktop\gos-scripts\gosutility\ldo.c
+	<setjmp.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lparser.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+	"lundump.h"
+	"lvm.h"
+	"lzio.h"
+
+1140108829 source:c:\users\krystian\desktop\gos-scripts\gosutility\ldump.c
+	<stddef.h>
+	"lua.h"
+	"lobject.h"
+	"lstate.h"
+	"lundump.h"
+
+1135271996 source:c:\users\krystian\desktop\gos-scripts\gosutility\lfunc.c
+	<stddef.h>
+	"lua.h"
+	"lfunc.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+
+1135271996 source:c:\users\krystian\desktop\gos-scripts\gosutility\lgc.c
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+
+1135873931 source:c:\users\krystian\desktop\gos-scripts\gosutility\linit.c
+	"lua.h"
+	"lualib.h"
+	"lauxlib.h"
+
+1138456753 source:c:\users\krystian\desktop\gos-scripts\gosutility\liolib.c
+	<errno.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1139254096 source:c:\users\krystian\desktop\gos-scripts\gosutility\llex.c
+	<ctype.h>
+	<locale.h>
+	<string.h>
+	"lua.h"
+	"ldo.h"
+	"llex.h"
+	"lobject.h"
+	"lparser.h"
+	"lstate.h"
+	"lstring.h"
+	"lzio.h"
+
+1125081392 source:c:\users\krystian\desktop\gos-scripts\gosutility\lmathlib.c
+	<stdlib.h>
+	<math.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1135607747 source:c:\users\krystian\desktop\gos-scripts\gosutility\lmem.c
+	<stddef.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+
+1135873931 source:c:\users\krystian\desktop\gos-scripts\gosutility\loadlib.c
+	<stdlib.h>
+	<string.h>
+	"lauxlib.h"
+	"lobject.h"
+	"lua.h"
+	"lualib.h"
+	<dlfcn.h>
+	<windows.h>
+	<mach-o/dyld.h>
+
+1139597032 source:c:\users\krystian\desktop\gos-scripts\gosutility\lobject.c
+	<ctype.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"ldo.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+	"lvm.h"
+
+1131482736 source:c:\users\krystian\desktop\gos-scripts\gosutility\lopcodes.c
+	"lopcodes.h"
+
+1138373671 source:c:\users\krystian\desktop\gos-scripts\gosutility\loslib.c
+	<errno.h>
+	<locale.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1135271996 source:c:\users\krystian\desktop\gos-scripts\gosutility\lparser.c
+	<string.h>
+	"lua.h"
+	"lcode.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"llex.h"
+	"lmem.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lparser.h"
+	"lstate.h"
+	"lstring.h"
+
+1128635185 source:c:\users\krystian\desktop\gos-scripts\gosutility\lstate.c
+	<stddef.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"llex.h"
+	"lmem.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+
+1135271996 source:c:\users\krystian\desktop\gos-scripts\gosutility\lstring.c
+	<string.h>
+	"lua.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+
+1135873931 source:c:\users\krystian\desktop\gos-scripts\gosutility\lstrlib.c
+	<ctype.h>
+	<stddef.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1137588542 source:c:\users\krystian\desktop\gos-scripts\gosutility\ltable.c
+	<math.h>
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lgc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstate.h"
+	"ltable.h"
+
+1130092695 source:c:\users\krystian\desktop\gos-scripts\gosutility\ltablib.c
+	<stddef.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1136901000 source:c:\users\krystian\desktop\gos-scripts\gosutility\ltm.c
+	<string.h>
+	"lua.h"
+	"lobject.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+
+1438473706 source:c:\users\krystian\desktop\gos-scripts\gosutility\lua.c
+	<signal.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"lualib.h"
+
+1131721393 source:c:\users\krystian\desktop\gos-scripts\gosutility\luac.c
+	<errno.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"lauxlib.h"
+	"ldo.h"
+	"lfunc.h"
+	"lmem.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lstring.h"
+	"lundump.h"
+
+1140108829 source:c:\users\krystian\desktop\gos-scripts\gosutility\lundump.c
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lmem.h"
+	"lobject.h"
+	"lstring.h"
+	"lundump.h"
+	"lzio.h"
+
+1138049503 source:c:\users\krystian\desktop\gos-scripts\gosutility\lvm.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lua.h"
+	"ldebug.h"
+	"ldo.h"
+	"lfunc.h"
+	"lgc.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lstate.h"
+	"lstring.h"
+	"ltable.h"
+	"ltm.h"
+	"lvm.h"
+
+1117833329 source:c:\users\krystian\desktop\gos-scripts\gosutility\lzio.c
+	<string.h>
+	"lua.h"
+	"llimits.h"
+	"lmem.h"
+	"lstate.h"
+	"lzio.h"
+
+1137023367 source:c:\users\krystian\desktop\gos-scripts\gosutility\print.c
+	<ctype.h>
+	<stdio.h>
+	"ldebug.h"
+	"lobject.h"
+	"lopcodes.h"
+	"lundump.h"
 
