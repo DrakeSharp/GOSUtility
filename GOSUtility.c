@@ -6,10 +6,19 @@
 #include <lauxlib.h>
 #include <lua.h>
 
-const int VERSION = 1;
+const int VERSION = 2;
 bool consoleOpen = false;
 char scriptsHome[500];
-
+int endsWith(const char *str, const char *suffix)
+{
+    if (!str || !suffix)
+        return 0;
+    size_t lenstr = strlen(str);
+    size_t lensuffix = strlen(suffix);
+    if (lensuffix >  lenstr)
+        return 0;
+    return strncmp(str + lenstr - lensuffix, suffix, lensuffix) == 0;
+}
 
 static int openConsole(){
     FreeConsole();
@@ -37,27 +46,27 @@ static int version(lua_State *L){
 static int listScripts(lua_State *L){
     DIR *dir;
     struct dirent *ent;
-    lua_newtable(L);
+
     if ((dir = opendir (scriptsHome)) != NULL) {
       int i=1;
+    lua_newtable(L);
       while ((ent = readdir (dir)) != NULL) {
             if(!strcmp("testscript1.lua", ent->d_name)) continue;
             if(!strcmp("testscript2.lua", ent->d_name)) continue;
             if(!strcmp("testscript3.lua", ent->d_name)) continue;
-            if(!(strlen(ent->d_name) > 4 && !strcmp(ent->d_name + strlen(ent->d_name) - 4, ".lua"))) continue;
+            if(!endsWith(ent->d_name, ".lua")) continue;
             ent->d_name[strlen(ent->d_name)-4] = 0;
+            char str[15];
+            sprintf(str, "%d", i++);
+            lua_pushstring(L, str);
             lua_pushstring(L, ent->d_name);
-            lua_rawseti(L, -2, i);
-            i++;
+            lua_settable(L, -3);
       }
       closedir (dir);
     } else {
-      /* could not open directory */
-      perror ("");
-      return EXIT_FAILURE;
+      pr("listscripts:error opening directory\n");
+      lua_pushnil(L);
     }
-
-
 
     return 1;
 }
